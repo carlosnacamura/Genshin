@@ -23,7 +23,7 @@ if (horasf == 0 && minutosf == 0 && segundosf <= 10){
     paragrafom.style.color = 'orange'
     paragrafos.style.color = 'orange'    
 } else {
-    resposta.innerHTML = `Espere ainda falta tempo`
+    resposta.innerHTML = `Espere ainda, ainda sobra tempo, aproveita para descasar`
     resposta.style.color = 'green'
     paragrafoh.style.color = 'green'
     paragrafom.style.color = 'green'
