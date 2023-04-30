@@ -6,28 +6,26 @@ let segundos = DiaHoje.getSeconds()
 let paragrafoh = document.getElementById("horas")
 let paragrafom = document.getElementById("minutos")
 let paragrafos = document.getElementById("segundos")
-let horasf = 21 -  horas 
-let minutosf =  59 -  minutos 
+let horasf = 21 -  horas  
+let minutosf =  59 -  minutos  
 let segundosf =  59 -  segundos 
 let resposta = document.getElementById("resposta")
 if (horasf == 0 && minutosf == 0 && segundosf <= 10){
     resposta.innerHTML = `Contagem regressiva`
-    resposta.style.color = 'red'
-    paragrafoh.style.color = 'red'
-    paragrafom.style.color = 'red'
-    paragrafos.style.color = 'red'    
+    paragrafoh.style.color = 'orangered'
+    paragrafom.style.color = 'orangered'
+    paragrafos.style.color = 'orangered'    
 } else if (horasf == 0 && minutosf <= 30 && segundosf <= 59){
     resposta.innerHTML = `Está quase chegando a hora se prepara arrombado`
-    resposta.style.color = 'orange'
-    paragrafoh.style.color = 'orange'
-    paragrafom.style.color = 'orange'
-    paragrafos.style.color = 'orange'    
-} else {
+    paragrafoh.style.color = 'rgb(92, 3, 92)'
+    paragrafom.style.color = 'rgb(92, 3, 92)'
+    paragrafos.style.color = 'rgb(92, 3, 92)'    
+} 
+else {
     resposta.innerHTML = `Espere ainda, ainda sobra tempo, aproveita para descasar`
-    resposta.style.color = 'green'
-    paragrafoh.style.color = 'green'
-    paragrafom.style.color = 'green'
-    paragrafos.style.color = 'green'    
+    paragrafoh.style.color = 'purple'
+    paragrafom.style.color = 'purple'
+    paragrafos.style.color = 'purple'    
 }
 if (horasf < 10){
    horasf = "0"+horasf

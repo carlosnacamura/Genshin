@@ -18,11 +18,10 @@
     width: 100vw;
     height: 100vh;
     display: flex;
-    justify-content: center;
     align-items: end;
-    background-image: url(aba.jpg);
-    border-radius: 30px;
-    background-size: 100%;
+    justify-content: end;
+    background-size: cover;
+    background-image: url(raiden.jpg);
     background-repeat: no-repeat;
 }
 body {
@@ -35,4 +34,24 @@ p {
     color: white;
     margin: 20px;
     border-radius: 30px;
+}
+#resposta {
+    background-image: linear-gradient(40deg, rgb(228, 13, 228),purple,rgb(85, 2, 85));
+    -webkit-text-fill-color: transparent;
+    background-size: 300% 100%;
+    animation: gradiente linear infinite alternate 9s;
+    -webkit-background-clip: text;
+}
+.paragrafo {
+    background-color: black;
+    border-radius: 30px;
+    padding: 20px;
+}
+@keyframes gradiente {
+    0% {
+        background-position-x: 0% ;
+    }
+    100% {
+        background-position-x: 300%;
+    }
 }
